@@ -1,0 +1,131 @@
+body {
+  background-color: grey;
+}
+.box {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  /* Столкнулся с проблемой максимальной и минимальной высоты и ширины
+  Пробовал задавать максимально значение и вроде бы всё работает
+  пробовал задавать минимальное и начинало всё съезжать */
+  width: 540px;
+  /* По поводу высоты, когда задаю максимально значение высоты
+  то контент обрезается до первого элемента
+  а при минимальной высоте всё работает, что вызывают у меня путаницу */
+  /* Поэтому решил оставить всё в фексированном значении */
+  height: 620px;
+  border-radius: 4px;
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: rgb(15, 15, 15);
+  font-family: Mulish;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.container__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(248, 248, 255);
+  width: 445px;
+  height: 202px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+.icon {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.text {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.text__description {
+  color: rgb(103, 103, 103);
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.text__uploading {
+  color: rgb(103, 103, 103);
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+.box-text {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.input_txt {
+  width: 445px;
+  height: 36px;
+  border: 0.5px solid green;
+
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+}
+.input_txt:hover {
+  border: 0.5px solid rgb(228, 29, 29);
+}
+.input_txt::placeholder {
+  color: rgb(15, 15, 15);
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  padding-left: 10px;
+}
+.warring__txt {
+  color: rgb(228, 29, 29);
+  font-family: Mulish;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+.margin__txt {
+  margin-bottom: 10px;
+}
+
+.upload__button {
+  border-radius: 4px;
+  background: rgb(72, 62, 168);
+  width: 445px;
+  height: 45px;
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+/* 0. Так же пробова реализовать drag&drop реализовать через Input, но у меня 
+ничего не получилось, т.к. не получалось убрать текс по умолчанию (выберите файл)
+и било принято решение верстать из какашекИПалок) */
+/* 1. Было сложно отпозицианировать карточку посередине, пришлось создавать отдельный
+класс box, что бы его поставить по центру, хотя можно было оптимизировать код, без дополнительного div  */
+/* 2. Так же возникли трудности в задавании отступов, которые внутри карточки, пришлось
+каждому классу прописывапть отступы справа и слева которые 47-48px, хотя можно было сделать одним движенгием
+я пробовал задать общему div отступ через padding left&right но оступы не лепились */
+/* Так же не смог поставить иконки внутри Inputov */

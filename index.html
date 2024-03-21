@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <h1 class="title">Upload</h1>
+        <div class="container__box">
+          <div class="icon"><img src="cloud.svg" alt="Облачко" /></div>
+          <header class="text">
+            Drag & drop files or <a href="#">Browse</a>
+          </header>
+          <p class="text__description">
+            Supported formates: JPEG, PNG, GIF, MP4, PDF, PSD, AI, Word, PPT
+          </p>
+        </div>
+        <div class="box-text">
+          <p class="text__uploading">Uploading - 3/3 files</p>
+          <input
+            placeholder="your-file-here.PDF"
+            class="input_txt"
+            type="text"
+          />
+          <p class="warring__txt">
+            This document is not supported, please delete and upload another
+            file.
+          </p>
+          <p class="text__uploading">Uploaded</p>
+          <input
+            placeholder="document-name.PDF"
+            class="input_txt margin__txt"
+            type="text"
+          />
+          <input
+            placeholder="image-name-goes-here.png"
+            class="input_txt margin__txt"
+            type="text"
+          />
+          <button class="upload__button">Upload Files</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
