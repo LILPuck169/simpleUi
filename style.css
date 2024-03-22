@@ -1,108 +1,137 @@
-body {
-  background-color: grey;
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --border-radius: 4px;
+  --font-family: "Mulish", Arial, sans-serif;
+
+  background-color: #f6f6f6;
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .box {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  padding: 65px;
+  min-height: 100vh;
 }
+
 .container {
   /* Столкнулся с проблемой максимальной и минимальной высоты и ширины
   Пробовал задавать максимально значение и вроде бы всё работает
   пробовал задавать минимальное и начинало всё съезжать */
-  width: 540px;
+  max-width: 540px;
   /* По поводу высоты, когда задаю максимально значение высоты
   то контент обрезается до первого элемента
   а при минимальной высоте всё работает, что вызывают у меня путаницу */
   /* Поэтому решил оставить всё в фексированном значении */
-  height: 620px;
-  border-radius: 4px;
+  /* height: 620px; */
+  border-radius: var(--border-radius);
   box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
   background: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  padding: 30px 48px;
+  margin: auto;
 }
+
 .title {
   color: rgb(15, 15, 15);
-  font-family: Mulish;
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
   letter-spacing: 0%;
   text-align: center;
 }
+
 .container__box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(248, 248, 255);
-  width: 445px;
-  height: 202px;
-  margin-left: 48px;
-  margin-right: 48px;
+  background: #f8f8ff;
+  min-height: 202px;
+  --border-color: 0.5;
+  border: 1px dashed rgba(73, 62, 168, var(--border-color));
+  position: relative;
+  border-radius: var(--border-radius);
 }
+
+.container__box:hover {
+  --border-color: 1;
+}
+
+.container__field {
+  position: absolute;
+  z-index: -1;
+}
+
 .icon {
   padding-top: 30px;
   padding-bottom: 25px;
 }
+
 .text {
-  font-family: Mulish;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0%;
   text-align: center;
 }
+
 .text__description {
   color: rgb(103, 103, 103);
-  font-family: Mulish;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0%;
   text-align: center;
 }
+
 .text__uploading {
   color: rgb(103, 103, 103);
-  font-family: Mulish;
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 0%;
 }
-.box-text {
-  margin-left: 48px;
-  margin-right: 48px;
-}
 
 .input_txt {
-  width: 445px;
+  width: 100%;
   height: 36px;
   border: 0.5px solid green;
 
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   background: rgb(255, 255, 255);
 }
+
 .input_txt:hover {
   border: 0.5px solid rgb(228, 29, 29);
 }
+
 .input_txt::placeholder {
   color: rgb(15, 15, 15);
-  font-family: Mulish;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0%;
   padding-left: 10px;
 }
+
 .warring__txt {
   color: rgb(228, 29, 29);
-  font-family: Mulish;
   font-size: 10px;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 0%;
 }
+
 .margin__txt {
   margin-bottom: 10px;
 }
@@ -113,7 +142,6 @@ body {
   width: 445px;
   height: 45px;
   color: rgb(255, 255, 255);
-  font-family: Mulish;
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
