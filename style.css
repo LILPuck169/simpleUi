@@ -95,17 +95,21 @@
   margin-bottom: 13px;
 }
 
-.input_txt {
+.input__txt {
   width: 100%;
   height: 36px;
   border: 0.5px solid green;
   border-radius: var(--border-radius);
   background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
-.input_txt:hover {
+.input__txt:hover {
   border: 0.5px solid rgb(228, 29, 29);
 }
-.input_txt::placeholder {
+.input__txt-placeholder {
   color: rgb(15, 15, 15);
   font-size: 12px;
   font-weight: 400;
