@@ -30,17 +30,21 @@
           <p class="text__uploading text__uploading-margin">
             Uploading - 3/3 files
           </p>
-          <input
+          <!-- <input
             placeholder="your-file-here.PDF"
             class="input_txt"
             type="text"
-          />
+          /> -->
+          <div class="input__txt">
+            <p class="input__txt-placeholder">your-file-here.PDF</p>
+            <img src="delete.svg" alt="Иконка" />
+          </div>
           <p class="warring__txt">
             This document is not supported, please delete and upload another
             file.
           </p>
           <p class="text__uploading text__uploading-margin1">Uploaded</p>
-          <input
+          <!-- <input
             placeholder="document-name.PDF"
             class="input_txt margin__txt"
             type="text"
@@ -49,7 +53,15 @@
             placeholder="image-name-goes-here.png"
             class="input_txt margin__txt"
             type="text"
-          />
+          /> -->
+          <div class="input__txt margin__txt">
+            <p class="input__txt-placeholder">document-name.PDF</p>
+            <img src="crossIcon.svg" alt="Иконка" />
+          </div>
+          <div class="input__txt margin__txt">
+            <p class="input__txt-placeholder">image-name-goes-here.png</p>
+            <img src="crossIcon.svg" alt="Иконка" />
+          </div>
           <button class="upload__button">Upload Files</button>
         </div>
       </div>
