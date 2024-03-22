@@ -98,7 +98,7 @@
 .input__txt {
   width: 100%;
   height: 36px;
-  border: 0.5px solid green;
+  border: 0.5px solid rgb(227, 227, 227);
   border-radius: var(--border-radius);
   background: rgb(255, 255, 255);
   display: flex;
@@ -125,7 +125,7 @@
   letter-spacing: 0%;
 }
 .margin__txt {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .upload__button {
@@ -140,4 +140,30 @@
   line-height: 18px;
   letter-spacing: 0%;
   text-transform: uppercase;
+  opacity: 0.5;
+}
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.progress {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(72, 62, 168);
+}
+.progress__2 {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(72, 62, 168);
+}
+
+.progress__3 {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(72, 62, 168);
 }
