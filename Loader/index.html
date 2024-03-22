@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <h1 class="title">Upload</h1>
+        <label class="container__box">
+          <div class="icon"><img src="./img/cloud.svg" alt="Облачко" /></div>
+          <header class="text">
+            Drag & drop files or <a href="#">Browse</a>
+          </header>
+          <p class="text__description">
+            Supported formates: JPEG, PNG, GIF, MP4, PDF, PSD, AI, Word, PPT
+          </p>
+          <input type="file" class="container__field" />
+        </label>
+        <div class="box-text">
+          <p class="text__uploading text__uploading-margin">
+            Uploading - 3/3 files
+          </p>
+          <!-- Инупт1 -->
+          <div>
+            <div class="input__txt margin__txt">
+              <p class="input__txt-placeholder">your-file-here.PDF</p>
+              <img src="./img/crossI.svg" alt="Иконка" />
+            </div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <!-- Инупт2 -->
+          <div>
+            <div class="input__txt margin__txt">
+              <p class="input__txt-placeholder">your-file-here.PDF</p>
+              <img src="./img/crossI.svg" alt="Иконка" />
+            </div>
+            <div class="progress-bar">
+              <div class="progress__2"></div>
+            </div>
+          </div>
+          <!-- Инпут3 -->
+          <div>
+            <div class="input__txt margin__txt">
+              <p class="input__txt-placeholder">your-file-here.PDF</p>
+              <img src="./img/crossI.svg" alt="Иконка" />
+            </div>
+            <div class="progress-bar">
+              <div class="progress__3"></div>
+            </div>
+          </div>
+          <button class="upload__button">Upload Files</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
